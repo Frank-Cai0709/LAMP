@@ -2,6 +2,14 @@
 
 Official implementation of **Lightweight Adaptive Multi-perspective Perception Network (LAMP)** for medical image segmentation. The repository provides configuration-driven training, evaluation, ablation studies, and qualitative visualization while preserving the model used for the reported experiments.
 
+<p align="center">
+  <img src="assets/LAMP_framework.png" width="95%">
+</p>
+
+<p align="center">
+  <b>Overall framework of LAMP.</b>
+</p>
+
 ## Method
 
 LAMP combines three components:
@@ -248,14 +256,3 @@ python visualization/visualize_ablation.py \
 
 YAML files control the dataset, image size, batch size, epochs, optimizer, learning rate, scheduler, augmentation, and every supported model variant. Key switches are `model.spb`, `model.erab`, and `model.afrb`. New experiments should inherit the default file through `_base_` and override only the intended field.
 
-## Release sanity check
-
-Run the CPU-only static release audit before publishing:
-
-```bash
-python scripts/check_release.py
-```
-
-
-## License
-Citation information will be updated after publication.
