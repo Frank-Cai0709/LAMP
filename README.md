@@ -3,7 +3,7 @@
 Official implementation of **Lightweight Adaptive Multi-perspective Perception Network (LAMP)** for medical image segmentation. The repository provides configuration-driven training, evaluation, ablation studies, and qualitative visualization while preserving the model used for the reported experiments.
 
 <p align="center">
-  <img src="LAMP_framework.png" width="95%">
+  <img src="Overview_main.png" width="95%">
 </p>
 
 <p align="center">
