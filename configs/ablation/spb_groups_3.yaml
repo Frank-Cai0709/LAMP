@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: spb_groups_3, output_dir: results/spb_groups_3}
+model:
+  spb: {groups: 3}

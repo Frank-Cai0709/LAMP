@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: w_o_afrb, output_dir: results/w_o_afrb}
+model:
+  afrb: {enabled: false}

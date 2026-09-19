@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: erab_stages_1_4, output_dir: results/erab_stages_1_4}
+model:
+  erab: {stages: [1, 2, 3, 4]}

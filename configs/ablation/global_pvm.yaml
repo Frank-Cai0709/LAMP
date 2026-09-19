@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: global_pvm, output_dir: results/global_pvm}
+model:
+  spb: {kind: pvm}

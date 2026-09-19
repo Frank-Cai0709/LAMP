@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: refinement_stages_2_3, output_dir: results/refinement_stages_2_3}
+model:
+  afrb: {refinement_stages: [2, 3]}

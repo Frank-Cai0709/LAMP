@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: entropy, output_dir: results/entropy}
+model:
+  erab: {map_type: entropy}

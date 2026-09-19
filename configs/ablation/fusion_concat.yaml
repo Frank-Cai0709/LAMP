@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: fusion_concat, output_dir: results/fusion_concat}
+model:
+  afrb: {fusion: concat}

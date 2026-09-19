@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: spb_finest, output_dir: results/spb_finest}
+model:
+  spb: {propagate_finest: true}

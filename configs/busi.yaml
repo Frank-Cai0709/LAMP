@@ -1,0 +1,3 @@
+_base_: lamp.yaml
+experiment: {name: lamp_busi, output_dir: results/lamp_busi}
+dataset: {name: busi, root: data/BUSI/seg}

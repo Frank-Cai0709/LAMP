@@ -1,0 +1,57 @@
+experiment:
+  name: lamp_isic2017
+  seed: 42
+  output_dir: results/lamp_isic2017
+dataset:
+  name: isic2017
+  root: data/dataset_isic17
+  image_size: [256, 256]
+  num_workers: 0
+augmentation:
+  enabled: true
+  rot90_flip_probability: 0.5
+  free_rotation_probability: 0.5
+  free_rotation_degrees: [20, 79]
+training:
+  batch_size: 8
+  epochs: 250
+  optimizer: adamw
+  learning_rate: 0.001
+  weight_decay: 0.01
+  scheduler: cosine
+  t_max: 50
+  eta_min: 0.00001
+  loss: bce_dice
+  save_every: 50
+model:
+  variant: lamp
+  input_channels: 3
+  num_classes: 1
+  channels: [8, 16, 24, 32, 48, 64]
+  spb:
+    enabled: true
+    kind: spb
+    groups: 4
+    propagation: sequential
+    propagate_finest: false
+    locations: [encoder4, encoder5, encoder6, decoder1, decoder2, decoder3]
+  erab:
+    enabled: true
+    map_type: wave
+    stages: [1, 2, 3]
+    kernel_size: 5
+    use_local_branch: true
+  afrb:
+    enabled: true
+    fusion: afrb
+    stages: [1, 2, 3]
+    refinement_stages: [3]
+evaluation:
+  batch_size: 1
+  threshold: 0.5
+  save_predictions: true
+benchmark:
+  batch_size: 1
+  num_workers: 0
+  save_composite_png: true
+  png_compress_level: 8

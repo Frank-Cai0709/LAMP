@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: w_o_spb, output_dir: results/w_o_spb}
+model:
+  spb: {enabled: false}

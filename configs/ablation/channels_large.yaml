@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: channels_large, output_dir: results/channels_large}
+model:
+  channels: [16, 32, 64, 128, 256, 512]

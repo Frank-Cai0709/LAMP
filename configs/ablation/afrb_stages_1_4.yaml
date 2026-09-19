@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: afrb_stages_1_4, output_dir: results/afrb_stages_1_4}
+model:
+  afrb: {stages: [1, 2, 3, 4]}

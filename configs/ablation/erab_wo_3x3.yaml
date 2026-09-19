@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: erab_wo_3x3, output_dir: results/erab_wo_3x3}
+model:
+  erab: {use_local_branch: false}

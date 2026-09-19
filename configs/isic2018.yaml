@@ -1,0 +1,3 @@
+_base_: lamp.yaml
+experiment: {name: lamp_isic2018, output_dir: results/lamp_isic2018}
+dataset: {name: isic2018, root: data/dataset_isic18}

@@ -1,0 +1,5 @@
+_base_: ../lamp.yaml
+experiment: {name: spb_only, output_dir: results/spb_only}
+model:
+  erab: {enabled: false}
+  afrb: {enabled: false}

@@ -1,0 +1,9 @@
+_base_: lamp.yaml
+experiment:
+  name: baseline_isic2017
+  output_dir: results/baseline_isic2017
+model:
+  variant: baseline
+  spb: {enabled: false}
+  erab: {enabled: false}
+  afrb: {enabled: false}

@@ -1,0 +1,2 @@
+_base_: ../lamp.yaml
+experiment: {name: fusion_afrb, output_dir: results/fusion_afrb}

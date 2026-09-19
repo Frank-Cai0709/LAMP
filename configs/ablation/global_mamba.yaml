@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: global_mamba, output_dir: results/global_mamba}
+model:
+  spb: {kind: mamba}

@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: spb_stage6, output_dir: results/spb_stage6}
+model:
+  spb: {locations: [encoder6, decoder1]}

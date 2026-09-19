@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: w_o_erab, output_dir: results/w_o_erab}
+model:
+  erab: {enabled: false}

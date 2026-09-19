@@ -1,0 +1,36 @@
+{
+  "Figure_11_GradCAM": [
+    {
+      "dataset": "ISIC2017",
+      "split": "test",
+      "index": 314,
+      "image_id": "ISIC_0013428"
+    },
+    {
+      "dataset": "ISIC2018",
+      "split": "test",
+      "index": 12,
+      "image_id": "ISIC_0013457"
+    },
+    {
+      "dataset": "BUSI",
+      "split": "test",
+      "index": 37,
+      "image_id": "benign (432)"
+    }
+  ],
+  "Figure_13_Failure_cases": [
+    {
+      "dataset": "ISIC2018",
+      "split": "test",
+      "index": 188,
+      "image_id": "ISIC_0013863"
+    },
+    {
+      "dataset": "BUSI",
+      "split": "test",
+      "index": 120,
+      "image_id": "benign (397)"
+    }
+  ]
+}

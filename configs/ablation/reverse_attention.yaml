@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: reverse_attention, output_dir: results/reverse_attention}
+model:
+  erab: {map_type: reverse_attention}

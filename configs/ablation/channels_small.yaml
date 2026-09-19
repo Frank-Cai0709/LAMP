@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: channels_small, output_dir: results/channels_small}
+model:
+  channels: [4, 8, 16, 24, 32, 48]

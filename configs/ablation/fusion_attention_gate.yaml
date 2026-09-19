@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: fusion_attention_gate, output_dir: results/fusion_attention_gate}
+model:
+  afrb: {fusion: attention_gate}

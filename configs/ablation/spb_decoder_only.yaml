@@ -1,0 +1,4 @@
+_base_: ../lamp.yaml
+experiment: {name: spb_decoder_only, output_dir: results/spb_decoder_only}
+model:
+  spb: {locations: [decoder1, decoder2, decoder3]}
