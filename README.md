@@ -155,7 +155,7 @@ the selection loss. Resume a run with:
 python train.py --config configs/lamp.yaml --resume results/lamp_isic2017/latest.pth
 ```
 
-For the three-run protocol reported in the ablation tables, use seeds 42, 43, and 44, for example:
+For the selected repeated experiments reported with mean ± standard deviation, use seeds 42, 43, and 44, for example:
 
 ```bash
 python train.py --config configs/lamp.yaml --seed 43 --output results/lamp/seed_43
